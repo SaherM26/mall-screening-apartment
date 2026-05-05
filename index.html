@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,9 +32,16 @@
         <span></span><span></span>
       </button>
     </header>
-
+    <aside class="deck-controls" aria-label="Presentation controls">
+      <button class="icon-button" data-prev-slide aria-label="Previous section">&#8249;</button>
+      <div class="deck-progress" aria-hidden="true">
+        <span data-progress-bar></span>
+      </div>
+      <strong data-slide-number>01 / 07</strong>
+      <button class="icon-button" data-next-slide aria-label="Next section">&#8250;</button>
+    </aside>
     <main>
-      <section id="opening" class="hero section snap-section" data-theme="opening">
+      <section id="opening" class="hero section snap-section" data-theme="opening" data-title="Opening">
         <div class="hero-media video-card" data-video-card>
           <div class="film-strip" aria-hidden="true">
             <span></span><span></span><span></span><span></span>
@@ -54,12 +61,18 @@
           </div>
         </div>
         <div class="hero-copy">
-          <p class="eyebrow">North America’s retail + entertainment command center</p>
-          <h1>Mall of America is not a mall. It is a market moving destination.</h1>
+          <p class="eyebrow">North America's retail + entertainment command center</p>
+          <h1>Put your brand inside the trip people plan around.</h1>
           <p>
-            A self-contained pitch environment for leasing, sponsorship, and event teams:
-            immediate proof of scale, energy, audience, and commercial upside.
+            A boardroom-ready interactive deck for leasing, sponsorship, and event teams:
+            fast proof, cinematic energy, and a direct path to the deal.
           </p>
+          <div class="pitch-strip" aria-label="Primary pitch points">
+            <span>Lease</span>
+            <span>Sponsor</span>
+            <span>Launch</span>
+            <span>Book</span>
+          </div>
           <div class="hero-actions">
             <a class="primary-cta" href="#modules">Build the deal</a>
             <a class="secondary-cta" href="#why">See the opportunity</a>
@@ -73,7 +86,7 @@
         </div>
       </section>
 
-      <section id="why" class="section split-section snap-section" data-theme="why">
+      <section id="why" class="section split-section snap-section" data-theme="why" data-title="Why MOA">
         <div class="section-copy">
           <p class="eyebrow">Why this property</p>
           <h2>The rare site where retail, tourism, transit, hotels, and entertainment compound.</h2>
@@ -94,7 +107,7 @@
             </article>
             <article>
               <span>Dwell</span>
-              <strong>72°-and-sunny environment</strong>
+              <strong>72Â°-and-sunny environment</strong>
               <p>An all-season marketplace built for repeat visits and longer stays.</p>
             </article>
           </div>
@@ -110,7 +123,7 @@
         </aside>
       </section>
 
-      <section id="retail" class="section retail-section snap-section" data-theme="retail">
+      <section id="retail" class="section retail-section snap-section" data-theme="retail" data-title="Retail">
         <div class="section-heading">
           <p class="eyebrow">Retail leasing</p>
           <h2>A launchpad for flagships, first-to-market concepts, pop-ups, and everyday luxury.</h2>
@@ -125,7 +138,7 @@
           <article class="deal-panel active" data-panel="flagship">
             <h3>Own the destination moment.</h3>
             <p>
-              Use MOA’s national profile and massive visitor base to create immersive brand
+              Use MOAâ€™s national profile and massive visitor base to create immersive brand
               architecture, exclusive launches, and social-first discovery.
             </p>
             <span>Best for: global retail, sport, beauty, tech, lifestyle.</span>
@@ -157,7 +170,7 @@
         </div>
       </section>
 
-      <section id="luxury" class="section gallery-section snap-section" data-theme="luxury">
+      <section id="luxury" class="section gallery-section snap-section" data-theme="luxury" data-title="Luxury">
         <div class="section-copy narrow">
           <p class="eyebrow">Luxury + lifestyle</p>
           <h2>Elevated retail benefits from the crowd without feeling crowded.</h2>
@@ -191,7 +204,7 @@
         </div>
       </section>
 
-      <section id="entertainment" class="section entertainment-section snap-section" data-theme="entertainment">
+      <section id="entertainment" class="section entertainment-section snap-section" data-theme="entertainment" data-title="Attractions">
         <div class="section-heading">
           <p class="eyebrow">Attractions + entertainment</p>
           <h2>The differentiator is built into the building.</h2>
@@ -205,7 +218,7 @@
         </div>
       </section>
 
-      <section id="events" class="section events-section snap-section" data-theme="events">
+      <section id="events" class="section events-section snap-section" data-theme="events" data-title="Events">
         <div class="section-copy">
           <p class="eyebrow">Events platform</p>
           <h2>A property that can sell tickets, host cameras, launch products, and move culture.</h2>
@@ -230,7 +243,7 @@
         </div>
       </section>
 
-      <section id="modules" class="section modules-section snap-section" data-theme="modules">
+      <section id="modules" class="section modules-section snap-section" data-theme="modules" data-title="Deal Paths">
         <div class="section-heading">
           <p class="eyebrow">Expandable architecture</p>
           <h2>Choose the commercial path. Each module can become its own deep-dive deck.</h2>
@@ -260,7 +273,7 @@
     </main>
 
     <dialog class="modal" data-video-modal>
-      <button class="icon-button close-modal" data-close-video aria-label="Close video">×</button>
+      <button class="icon-button close-modal" data-close-video aria-label="Close video">Ã—</button>
       <iframe
         title="Mall of America aerial property reel"
         data-src="https://www.airvuz.com/videoPlayerEmbed/57d8c9fe6645aa0dfa06a570?autoplay=true"
@@ -270,7 +283,7 @@
     </dialog>
 
     <dialog class="modal module-modal" data-module-modal>
-      <button class="icon-button close-modal" data-close-module aria-label="Close module">×</button>
+      <button class="icon-button close-modal" data-close-module aria-label="Close module">Ã—</button>
       <div data-module-content></div>
     </dialog>
 
@@ -284,3 +297,5 @@
     <script src="app.js" defer></script>
   </body>
 </html>
+
+

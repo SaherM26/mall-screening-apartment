@@ -150,3 +150,59 @@ const observer = new IntersectionObserver(setActiveSection, {
 });
 
 sections.forEach((section) => observer.observe(section));
+
+const slideNumber = document.querySelector("[data-slide-number]");
+const progressBar = document.querySelector("[data-progress-bar]");
+const previousSlide = document.querySelector("[data-prev-slide]");
+const nextSlide = document.querySelector("[data-next-slide]");
+let activeSlideIndex = 0;
+
+function updateDeckChrome(index) {
+  activeSlideIndex = Math.max(0, Math.min(index, sections.length - 1));
+  const current = String(activeSlideIndex + 1).padStart(2, "0");
+  const total = String(sections.length).padStart(2, "0");
+
+  if (slideNumber) {
+    const title = sections[activeSlideIndex]?.dataset.title || "Section";
+    slideNumber.textContent = `${current} / ${total}  ${title}`;
+  }
+
+  if (progressBar) {
+    progressBar.style.width = `${((activeSlideIndex + 1) / sections.length) * 100}%`;
+  }
+}
+
+function goToSlide(index) {
+  const target = sections[Math.max(0, Math.min(index, sections.length - 1))];
+  target?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+const deckObserver = new IntersectionObserver(
+  (entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+    if (!visible) return;
+    updateDeckChrome(sections.indexOf(visible.target));
+  },
+  { threshold: [0.45, 0.62] },
+);
+
+sections.forEach((section) => deckObserver.observe(section));
+previousSlide?.addEventListener("click", () => goToSlide(activeSlideIndex - 1));
+nextSlide?.addEventListener("click", () => goToSlide(activeSlideIndex + 1));
+
+window.addEventListener("keydown", (event) => {
+  if (["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) return;
+  if (event.key === "ArrowDown" || event.key === "ArrowRight" || event.key === "PageDown") {
+    event.preventDefault();
+    goToSlide(activeSlideIndex + 1);
+  }
+  if (event.key === "ArrowUp" || event.key === "ArrowLeft" || event.key === "PageUp") {
+    event.preventDefault();
+    goToSlide(activeSlideIndex - 1);
+  }
+});
+
+updateDeckChrome(0);
