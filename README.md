@@ -1,23 +1,57 @@
 # Mall of America Interactive Sales Deck
 
-An interview project prototype: a browser-based, non-linear sales deck for Mall of America, designed for leasing, sponsorship, and event partnership conversations.
+An interview project prototype: a browser-based, non-linear sales deck for Mall of America, designed for leasing, sponsorship, event booking, and venue partnership conversations.
+
+This is intentionally built as a presentation tool, not a conventional website. It is designed to work on a live sales call or as a standalone link a prospect can explore without narration.
+
+## Live Demo
+
+GitHub Pages URL after deployment:
+
+```text
+https://saherm26.github.io/mall-screening-apartment/
+```
+
+The app has no build step and can also be deployed with Vercel, Netlify, or any static host.
 
 ## Subject
 
 Mall of America was selected because it gives the strongest sales-deck signal for a North American mega-mall:
 
 - North America's largest retail and entertainment complex.
-- Official leasing story with 32M+ annual customer visits and $1B+ in annual sales.
-- Nearly 500 stores, 45+ eateries, and 30+ rides and attractions inside Nickelodeon Universe.
-- Publicly documented event reputation: celebrity appearances, live music, product launches, book signings, and movie premieres.
-- Strong expansion path into leasing, sponsorship, events, hotels, attractions, and venue-specific modules.
+- 32M+ annual visits and $1B+ in annual sales.
+- Nearly 500 stores, 45+ eateries, and a major indoor entertainment platform.
+- Attractions such as Nickelodeon Universe, SEA LIFE, Crayola Experience, and FlyOver America.
+- A credible commercial path across leasing, sponsorship, events, dining, hospitality, and venue modules.
+
+## Experience Map
+
+The deck covers the required Phase 1 story beats:
+
+- Opening: cinematic, video-led intro with immediate scale.
+- Why This Property: access, tourism, scale, and year-round demand.
+- Retail: segmented leasing pitch for flagships, first-to-market, pop-up, and F&B.
+- Luxury: premium positioning and concept takeover.
+- Dining & Lifestyle: food as dwell-time and hospitality engine.
+- Attractions & Entertainment: core destination differentiator.
+- Events & Platform: launches, performances, expos, and cultural moments.
+- Deal Paths: expandable modules for leasing, sponsorship, events, and venue concepts.
+
+## Phase 2 Architecture
+
+The code is structured so the final section can expand into deeper sub-decks without a rewrite:
+
+- `moduleCopy` in `app.js` powers clickable module dialogs.
+- Retail paths are tabbed by category.
+- Event rows are isolated interaction targets.
+- The venue module is a working example of a future expo / performing arts / hospitality sub-section.
 
 ## Tech Stack
 
 - Static HTML
-- CSS with responsive layouts and motion
+- CSS with responsive layouts, snap sections, and lightweight motion
 - Vanilla JavaScript
-- No build step required
+- No framework and no build step
 
 This keeps the prototype fast, portable, and GitHub Pages friendly.
 
@@ -37,29 +71,38 @@ http://localhost:8080
 
 ## Deploy
 
-Because this is a static app, it can be deployed on GitHub Pages, Netlify, Vercel, or any static host.
-
 For GitHub Pages:
 
 1. Push the repository to GitHub.
 2. In repository settings, enable Pages.
 3. Set the source to the main branch root.
+4. Share the generated public URL.
 
 ## Design Decisions
 
-- Built as a deck experience, not a brochure site: full-screen sections, non-linear navigation, cinematic intro, and focused business paths.
-- Video is presented as the primary opening action via a property reel modal, with lightweight lazy loading so the first screen stays fast.
-- The commercial story is organized around decision-maker intent: lease space, sponsor moments, or book events.
-- The code is intentionally modular: leasing tabs, event rows, and module cards can become deeper sub-decks without rewriting the page.
+- Built as a deck experience: full-screen sections, deck controls, non-linear nav, and keyboard slide movement.
+- Video is the primary opening action, lazy-loaded in a modal so the first screen stays fast.
+- The visual system borrows from luxury brand presentation: minimal chrome, large editorial type, restrained color, and high-impact imagery.
+- Every section connects to a business action: lease, sponsor, activate, or book.
+- Responsive behavior is optimized for desktop and tablet, with mobile-friendly fallbacks.
 
 ## AI Use
 
 AI was used to accelerate:
 
-- Narrative strategy and section architecture.
-- Premium visual direction and UI copy.
-- A conceptual generated-visual placeholder for a luxury wing takeover where official imagery may be limited.
-- Implementation scaffolding and responsive interaction behavior.
+- Sales narrative strategy and deck structure.
+- Premium UI direction, interaction planning, and copy tightening.
+- A conceptual luxury takeover visual where official assets are limited.
+- Implementation scaffolding, accessibility checks, and responsive QA.
+
+See `WRITEUP.md` for the optional brief write-up.
+
+## Performance Notes
+
+- No JavaScript framework or bundler.
+- Images are lazy-loaded outside the hero.
+- The video iframe is only loaded when the viewer opens the reel.
+- CSS motion respects `prefers-reduced-motion`.
 
 ## Sources
 

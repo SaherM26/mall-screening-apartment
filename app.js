@@ -39,6 +39,16 @@ const moduleCopy = {
       "Booking CTA flow with capacity assumptions, calendar holds, package tiers, and production requirements.",
     ],
   },
+  venue: {
+    eyebrow: "Venue-specific module",
+    title: "A credible expansion path for expo, performance, and hospitality packages.",
+    items: [
+      "Expo concept: sponsor-ready floor plans, modular booth packages, load-in assumptions, and hotel bundles.",
+      "Performing arts path: ticketed programming, premium seating, reception space, and brand-hosted evenings.",
+      "Production package: staging, lighting, guest flow, security, catering, and media capture requirements.",
+      "Sales flow: audience fit, event calendar availability, package tier, lead capture, and booking CTA.",
+    ],
+  },
 };
 
 function updateGlow(event) {
@@ -130,7 +140,9 @@ document.querySelectorAll(".console-row").forEach((row) => {
   row.addEventListener("click", () => setEventRow(row));
 });
 
-document.querySelector("[data-open-video]")?.addEventListener("click", openVideo);
+document.querySelectorAll("[data-open-video]").forEach((button) => {
+  button.addEventListener("click", openVideo);
+});
 document.querySelector("[data-close-video]")?.addEventListener("click", closeVideo);
 videoModal?.addEventListener("click", (event) => {
   if (event.target === videoModal) closeVideo();
@@ -206,3 +218,8 @@ window.addEventListener("keydown", (event) => {
 });
 
 updateDeckChrome(0);
+
+window.addEventListener("load", () => {
+  const hashTarget = window.location.hash && document.querySelector(window.location.hash);
+  hashTarget?.scrollIntoView({ behavior: "auto", block: "start" });
+});
