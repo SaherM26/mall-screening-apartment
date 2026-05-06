@@ -356,6 +356,22 @@ h3 {
   background: var(--line);
 }
 
+.build-note {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 34rem;
+  margin-top: 1.25rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--gold);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.build-note strong {
+  color: var(--ink);
+}
+
 .chapter-strip a {
   display: grid;
   gap: 0.32rem;

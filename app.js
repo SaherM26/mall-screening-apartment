@@ -11,7 +11,7 @@ const moduleContent = document.querySelector("[data-module-content]");
 const moduleCopy = {
   leasing: {
     eyebrow: "Leasing paths",
-    title: "Four leasing paths I would turn into deeper slides next.",
+    title: "The four leasing paths I would build out next.",
     items: [
       "Luxury and contemporary: styling moments, hotel-linked trips, and calmer premium zones.",
       "Flagship retail: a store that can also work as a launch space and content moment.",
@@ -21,7 +21,7 @@ const moduleCopy = {
   },
   sponsor: {
     eyebrow: "Sponsorship platform",
-    title: "A sponsor can be part of the guest journey, not just a logo on a wall.",
+    title: "Sponsorship should connect to real guest moments.",
     items: [
       "Naming ideas across attractions, events, loyalty moments, and wayfinding.",
       "Audience packages for families, tourists, teens, premium shoppers, and regional repeat guests.",
@@ -31,7 +31,7 @@ const moduleCopy = {
   },
   events: {
     eyebrow: "Events + venues",
-    title: "This section could become a full booking module.",
+    title: "The events section could become a booking tool.",
     items: [
       "Rotunda and court programming for launches, appearances, live music, and premieres.",
       "Expo-style layouts for conventions, brand summits, fan events, and retail showcases.",
@@ -41,7 +41,7 @@ const moduleCopy = {
   },
   venue: {
     eyebrow: "Venue-specific module",
-    title: "A future module for expo, performance, and hospitality packages.",
+    title: "A future module for expo and performance packages.",
     items: [
       "Expo concept: floor plans, booth packages, load-in assumptions, and hotel bundles.",
       "Performance path: ticketed programming, seating, reception space, and hosted evenings.",
