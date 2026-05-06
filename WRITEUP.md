@@ -2,7 +2,7 @@
 
 ## Concept
 
-The assignment asks for a presentation deck, not a normal marketing website. I selected Mall of America because it has a strong commercial story: national visibility, massive annual traffic, a mixed retail and entertainment offer, dining, hotels, event programming, and enough public media to create a credible self-contained sales experience.
+The assignment asks for a presentation deck, not a normal marketing website. I selected Mall of America because it has a clear commercial story: national visibility, massive annual traffic, retail, entertainment, dining, hotels, event programming, and enough public media to build a believable self-contained sales experience.
 
 The product is designed for three buyer groups:
 
@@ -10,11 +10,11 @@ The product is designed for three buyer groups:
 - Sponsors and agencies evaluating brand activations.
 - Event promoters and producers evaluating bookings and venue concepts.
 
-The opening is built to create fast emotional buy-in: large editorial type, a prominent property reel, key commercial metrics, and immediate paths for leasing, activation, and booking. The rest of the deck lets viewers move non-linearly through the story rather than forcing a fixed slide sequence.
+The opening is built to create fast emotional buy-in: large type, a prominent property reel, key commercial metrics, and immediate paths for leasing, activation, and booking. The rest of the deck lets viewers move non-linearly through the story rather than forcing a fixed slide sequence.
 
 ## Design Rationale
 
-The visual direction moved away from a dark cinematic theme into a lighter luxury retail palette. The final direction uses warm off-white surfaces, black editorial typography, restrained gold accents, and large property imagery. This better fits a premium leasing and partnership pitch while still letting the entertainment visuals provide energy.
+The visual direction moved away from a dark cinematic theme into a lighter retail presentation style. The final direction uses warm off-white surfaces, black typography, restrained gold accents, and large property imagery. This feels more like something I would submit: polished enough for the brief, but still direct and readable.
 
 Each section is built around a business argument:
 
@@ -40,11 +40,11 @@ The architecture is ready for deeper modules without a rewrite. The `moduleCopy`
 
 ## AI Use
 
-AI was used as a design and product-building accelerator:
+AI was used as a helper while I built:
 
 - Translating the assignment brief into a deck architecture.
 - Tightening the commercial narrative and section copy.
-- Iterating visual direction based on user feedback.
+- Iterating the visual direction based on feedback.
 - Creating the conceptual luxury takeover placeholder where official assets are limited.
 - Reviewing responsive behavior, interaction states, and submission readiness.
 

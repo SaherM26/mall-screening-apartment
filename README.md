@@ -1,6 +1,6 @@
 # Mall of America Interactive Sales Deck
 
-An interview project prototype: a browser-based, non-linear sales deck for Mall of America, designed for leasing, sponsorship, event booking, and venue partnership conversations.
+An interview project by Saher Bhatkar: a browser-based, non-linear sales deck for Mall of America, designed for leasing, sponsorship, event booking, and venue partnership conversations.
 
 This is intentionally built as a presentation tool, not a conventional website. It is designed to work on a live sales call or as a standalone link a prospect can explore without narration.
 
@@ -16,35 +16,35 @@ The app has no build step and can also be deployed with Vercel, Netlify, or any 
 
 ## Subject
 
-Mall of America was selected because it gives the strongest sales-deck signal for a North American mega-mall:
+I chose Mall of America because it gives the clearest sales-deck story for a North American mega-mall:
 
 - North America's largest retail and entertainment complex.
 - 32M+ annual visits and $1B+ in annual sales.
 - Nearly 500 stores, 45+ eateries, and a major indoor entertainment platform.
 - Attractions such as Nickelodeon Universe, SEA LIFE, Crayola Experience, and FlyOver America.
-- A credible commercial path across leasing, sponsorship, events, dining, hospitality, and venue modules.
+- A clear commercial path across leasing, sponsorship, events, dining, hospitality, and future venue modules.
 
 ## Experience Map
 
 The deck covers the required Phase 1 story beats:
 
-- Opening: cinematic, video-led intro with immediate scale.
+- Opening: video-led intro with immediate scale.
 - Why This Property: access, tourism, scale, and year-round demand.
 - Retail: segmented leasing pitch for flagships, first-to-market, pop-up, and F&B.
-- Luxury: premium positioning and concept takeover.
+- Luxury: premium positioning and a concept takeover.
 - Dining & Lifestyle: food as dwell-time and hospitality engine.
 - Attractions & Entertainment: core destination differentiator.
-- Events & Platform: launches, performances, expos, and cultural moments.
+- Events & Platform: launches, performances, expos, and large audience moments.
 - Deal Paths: expandable modules for leasing, sponsorship, events, and venue concepts.
 
 ## Phase 2 Architecture
 
-The code is structured so the final section can expand into deeper sub-decks without a rewrite:
+The code is structured so the final section can expand into deeper sub-decks without rewriting the page:
 
 - `moduleCopy` in `app.js` powers clickable module dialogs.
 - Retail paths are tabbed by category.
 - Event rows are isolated interaction targets.
-- The venue module is a working example of a future expo / performing arts / hospitality sub-section.
+- The venue module is a working example of a future expo, performing arts, or hospitality sub-section.
 
 ## Tech Stack
 
@@ -82,18 +82,18 @@ For GitHub Pages:
 
 - Built as a deck experience: full-screen sections, deck controls, non-linear nav, and keyboard slide movement.
 - Video is the primary opening action, lazy-loaded in a modal so the first screen stays fast.
-- The visual system borrows from luxury brand presentation: minimal chrome, large editorial type, restrained color, and high-impact imagery.
+- The visual system uses a lighter presentation style: warm background, large type, restrained color, and high-impact imagery.
 - Every section connects to a business action: lease, sponsor, activate, or book.
 - Responsive behavior is optimized for desktop and tablet, with mobile-friendly fallbacks.
 
 ## AI Use
 
-AI was used to accelerate:
+AI was used as a helper while I made the project:
 
-- Sales narrative strategy and deck structure.
-- Premium UI direction, interaction planning, and copy tightening.
-- A conceptual luxury takeover visual where official assets are limited.
-- Implementation scaffolding, accessibility checks, and responsive QA.
+- Turning the brief into a deck structure.
+- Exploring visual direction and interaction ideas.
+- Tightening copy and reducing repeated wording.
+- Implementation help for responsive behavior, accessibility checks, and QA.
 
 See `WRITEUP.md` for the optional brief write-up.
 
